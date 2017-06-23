@@ -36,5 +36,14 @@ dependencies {
     compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.github.bumptech.glide:glide:3.8.0'
+
+    //adding the activity stuff
+    compile 'org.parceler:parceler-api:1.1.6'
+    annotationProcessor 'org.parceler:parceler:1.1.6'
+    //Boiler Plate with butter knife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+
     testCompile 'junit:junit:4.12'
 }

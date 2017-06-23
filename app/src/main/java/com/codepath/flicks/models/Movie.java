@@ -19,6 +19,7 @@ public class Movie {
     String posterPath;
     String backdropPath;
     Double voteAverage;
+    Integer id;
 
     // no-arg, empty constructor required for Parceler
     public Movie() {}

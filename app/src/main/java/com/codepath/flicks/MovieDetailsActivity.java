@@ -10,6 +10,9 @@ import com.codepath.flicks.models.Movie;
 
 import org.parceler.Parcels;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 //public class MovieDetailsActivity extends AppCompatActivity {
 //
 //    @Override
@@ -24,20 +27,29 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     // the movie to display
     Movie movie;
-    TextView tvTitle;
-    TextView tvOverview;
-    RatingBar rbVoteAverage;
+//    TextView tvTitle;
+//    TextView tvOverview;
+//    RatingBar rbVoteAverage;
+    @BindView(R.id.tvTitle) TextView tvTitle;
+    @BindView(R.id.tvOverview) TextView tvOverview;
+    @BindView(R.id.rbVoteAverage) RatingBar rbVoteAverage;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_details);
+        ButterKnife.bind(this);
         //assigning things in here using the findViewById function y'all!!
-        tvTitle = (TextView) findViewById(R.id.tvTitle);
-        tvOverview = (TextView) findViewById(R.id.tvOverview);
-        rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);
+//        @BindView(R.id.tvTitle) TextView tvTitle;
+//        @BindView(R.id.tvOverview) TextView tvOverview;
+//        @BindView(R.id.rbVoteAverage) RatingBar rbVoteAverage;
+
+        // tvTitle = (TextView) findViewById(R.id.tvTitle);
+        //tvOverview = (TextView) findViewById(R.id.tvOverview);
+        //rbVoteAverage = (RatingBar) findViewById(R.id.rbVoteAverage);
 
 
         // unwrap the movie passed in via intent, using its simple name as a key
@@ -55,3 +67,14 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
     }
 }
+
+//
+
+
+
+//
+//    public final static String API_BASE_URL = "https://api.themoviedb.org/3";
+//    // the parameter name for the  API key
+//    public final static String API_KEY_PARAM = "api_key";
+//    //tag for logging this activity
+//    public final static String TAG = "MovieListActivity";

@@ -73,8 +73,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
 
 
 //
-//    public final static String API_BASE_URL = "https://api.themoviedb.org/3";
-//    // the parameter name for the  API key
+//    public final static String API_BASE_URL = "https://developers.google.com/youtube/v3/";
 //    public final static String API_KEY_PARAM = "api_key";
-//    //tag for logging this activity
-//    public final static String TAG = "MovieListActivity";
+//    public final static String TAG = "MovieDetails";
+//

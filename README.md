@@ -24,8 +24,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
-Made a fiew UI improvements!
+* [x (ish)] List anything else that you can get done to improve the app functionality!
+
+Made UI improvements compatible to different activities and orientations, including color changes, ellipses, font changes, scroll bar changes and made the changes aesthatically pleasing.
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:

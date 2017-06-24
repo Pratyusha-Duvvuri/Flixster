@@ -63,7 +63,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     public void onBindViewHolder(ViewHolder holder, int position) {
         Movie movie = movies.get(position);
         //populate the view with the movie data
-        holder.tvTitle.setText(movie.getOverview());
+        holder.tvTitle.setText(movie.getTitle());
         holder.tvOverview.setText(movie.getOverview());
 
         //determine the current orientation

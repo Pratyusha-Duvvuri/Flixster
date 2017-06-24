@@ -5,6 +5,8 @@
     android:layout_width="match_parent" android:layout_height="wrap_content">
 
     <ImageView
+        android:background="@color/lightestOrange"
+
         android:id="@+id/ivBackdropImage"
         android:layout_width="480dp"
         android:layout_height="wrap_content"
@@ -17,6 +19,11 @@
         app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 
     <TextView
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+
+        android:background="@color/darkOrange"
+
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,5 +41,11 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tvTitle"
         android:layout_toRightOf="@+id/ivBackdropImage"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textStyle="italic"
+        android:background="@color/lightOrange"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:maxLines="7"
+        />
 </RelativeLayout>
